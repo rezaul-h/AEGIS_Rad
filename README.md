@@ -1,6 +1,4 @@
-# AEGIS-Rad
-
-Official implementation accompanying the manuscript **“Anatomical Grounding and Selective Control for Reducing Unsupported Findings in Radiology Report Generation.”** AEGIS-Rad is a support-conditioned chest-radiograph report-generation framework that combines multi-view visual encoding, fixed anatomical query tokens, typed finding–anatomy graph reasoning, confidence-controlled global/regional fusion, and selective pre-emission control.
+# AEGIS-Rad: A chest-radiograph report-generation framework. 
 
 ## Method overview
 
@@ -12,7 +10,7 @@ and applies a separate three-way decoder action
 
 `emit`, `hedge`, `suppress`.
 
-The distinction is explicit: clinical `absent` is a semantic state and is not equivalent to `suppress`. A supported negative finding may be emitted as an explicit negative statement, whereas an inadequately supported positive proposal is suppressed and remains `unmentioned`.
+Clinical `absent` is a semantic state and is not equivalent to `suppress`. A supported negative finding may be emitted as an explicit negative statement, whereas an inadequately supported positive proposal is suppressed and remains `unmentioned`.
 
 The implementation contains:
 
@@ -70,17 +68,17 @@ python -m venv .venv
 pip install -e .
 ```
 
-`configs/base.yaml` uses the lightweight convolutional encoder for local unit tests and smoke tests without downloading external weights. The manuscript configurations, `configs/mimic.yaml` and `configs/iu.yaml`, explicitly select the Hugging Face RAD-DINO backend with `microsoft/rad-dino`.
+`configs/base.yaml` uses the lightweight convolutional encoder for local unit tests and smoke tests without downloading external weights. The configurations, `configs/mimic.yaml` and `configs/iu.yaml`, select the Hugging Face RAD-DINO backend with `microsoft/rad-dino`.
 
 ## Data preparation
 
-The repository does not redistribute MIMIC-CXR-JPG or IU X-Ray/Open-I. Each manifest contains one row per radiographic study/report with the following schema:
+Each manifest contains one row per radiographic study/report with the following schema:
 
 ```text
 study_id,split,frontal_path,lateral_path,report,findings_json,region_targets_json,support_targets_json
 ```
 
-`findings_json` uses the four report-semantic states. A finding that is not asserted in the structured report representation is `unmentioned`, not `absent`.
+`findings_json` uses the four report-semantic states. A finding that is not asserted in the manuscript report is `unmentioned`, not `absent`.
 
 Example:
 
@@ -229,12 +227,13 @@ pytest -q
 python scripts/smoke_test.py
 ```
 
-The tests verify the manuscript implementation contract, including 24 anatomical regions, 14 candidate findings, four semantic states, three decoder actions, five training seeds, manuscript loss weights and thresholds, RAD-DINO selection for manuscript configurations, and separation of `ABSENT` from `SUPPRESS`.
+The tests verify the implementation, including 24 anatomical regions, 14 candidate findings, four semantic states, three decoder actions, five training seeds, manuscript loss weights and thresholds, RAD-DINO selection for manuscript configurations, and separation of `ABSENT` from `SUPPRESS`.
 
-## Code availability
+## Contact 
 
-Source repository: https://github.com/rezaul-h/AEGIS_Rad
+Rezaul Haue: rezaulh603@gmail.com 
 
+Abdullah Al Sakib  sakibabdulla685@gmail.com
 ## License
 
 This repository is distributed under the terms provided in `LICENSE`.
