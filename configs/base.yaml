@@ -15,6 +15,7 @@ model:
   max_report_tokens: 256
   vocab_size: 12000
   num_findings: 14
+  num_semantic_states: 4
 training:
   batch_size: 16
   epochs: 120
@@ -42,6 +43,8 @@ loss:
   hall: 0.30
   cal: 0.05
   grounding_contrastive_temperature: 0.07
+  grounding_assignment_weight: 1.0
+  grounding_contrastive_weight: 1.0
 data:
   manifest: data/manifest.csv
   image_size: 384

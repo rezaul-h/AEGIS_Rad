@@ -1,3 +1,7 @@
 base: base.yaml
+model:
+  encoder_backend: hf
+  encoder_name: microsoft/rad-dino
+  encoder_revision: null
 data:
   manifest: data/iu_manifest.csv
