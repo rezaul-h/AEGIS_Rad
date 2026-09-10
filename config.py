@@ -22,6 +22,7 @@ class ModelConfig:
     max_report_tokens: int = 256
     vocab_size: int = 12000
     num_findings: int = 14
+    num_semantic_states: int = 4
 
 @dataclass
 class TrainingConfig:
@@ -55,6 +56,8 @@ class LossConfig:
     hall: float = 0.30
     cal: float = 0.05
     grounding_contrastive_temperature: float = 0.07
+    grounding_assignment_weight: float = 1.0
+    grounding_contrastive_weight: float = 1.0
 
 @dataclass
 class DataConfig:

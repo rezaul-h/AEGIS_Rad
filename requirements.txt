@@ -12,3 +12,4 @@ nltk>=3.8
 transformers>=4.45
 rouge-score>=0.1.2
 matplotlib>=3.8
+pytest>=8.0
