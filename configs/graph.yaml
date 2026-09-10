@@ -1,0 +1,23 @@
+edges:
+  - {source_type: region, source: Right apical, target_type: region, target: Left apical, relation: laterality}
+  - {source_type: region, source: Right upper peripheral, target_type: region, target: Left upper peripheral, relation: laterality}
+  - {source_type: region, source: Right upper perihilar, target_type: region, target: Left upper perihilar, relation: laterality}
+  - {source_type: region, source: Right mid peripheral, target_type: region, target: Left mid peripheral, relation: laterality}
+  - {source_type: region, source: Right mid perihilar, target_type: region, target: Left mid perihilar, relation: laterality}
+  - {source_type: region, source: Right lower peripheral, target_type: region, target: Left lower peripheral, relation: laterality}
+  - {source_type: region, source: Right lower perihilar, target_type: region, target: Left lower perihilar, relation: laterality}
+  - {source_type: region, source: Right costophrenic, target_type: region, target: Left costophrenic, relation: laterality}
+  - {source_type: region, source: Right hilum, target_type: region, target: Left hilum, relation: laterality}
+  - {source_type: region, source: Cardiac silhouette, target_type: finding, target: Cardiomegaly, relation: finding_location}
+  - {source_type: region, source: Upper mediastinum, target_type: finding, target: Enlarged Cardiomediastinum, relation: finding_location}
+  - {source_type: region, source: Right costophrenic, target_type: finding, target: Pleural Effusion, relation: finding_location}
+  - {source_type: region, source: Left costophrenic, target_type: finding, target: Pleural Effusion, relation: finding_location}
+  - {source_type: region, source: Right apical, target_type: finding, target: Pneumothorax, relation: finding_location}
+  - {source_type: region, source: Left apical, target_type: finding, target: Pneumothorax, relation: finding_location}
+  - {source_type: region, source: Right lower peripheral, target_type: finding, target: Atelectasis, relation: finding_location}
+  - {source_type: region, source: Left lower peripheral, target_type: finding, target: Atelectasis, relation: finding_location}
+  - {source_type: region, source: Right mid peripheral, target_type: finding, target: Consolidation, relation: finding_location}
+  - {source_type: region, source: Left mid peripheral, target_type: finding, target: Consolidation, relation: finding_location}
+  - {source_type: region, source: Right lower perihilar, target_type: finding, target: Edema, relation: finding_location}
+  - {source_type: region, source: Left lower perihilar, target_type: finding, target: Edema, relation: finding_location}
+  - {source_type: region, source: Trachea/carina, target_type: finding, target: Support Devices, relation: finding_location}

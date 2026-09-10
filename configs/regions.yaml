@@ -1,0 +1,97 @@
+regions:
+  - name: "Right apical"
+    side: right
+    family: lung
+    xy: [0.72, 0.12]
+  - name: "Right upper peripheral"
+    side: right
+    family: lung
+    xy: [0.78, 0.24]
+  - name: "Right upper perihilar"
+    side: right
+    family: lung
+    xy: [0.62, 0.28]
+  - name: "Right mid peripheral"
+    side: right
+    family: lung
+    xy: [0.8, 0.43]
+  - name: "Right mid perihilar"
+    side: right
+    family: lung
+    xy: [0.63, 0.44]
+  - name: "Right lower peripheral"
+    side: right
+    family: lung
+    xy: [0.78, 0.66]
+  - name: "Right lower perihilar"
+    side: right
+    family: lung
+    xy: [0.63, 0.64]
+  - name: "Right costophrenic"
+    side: right
+    family: pleura
+    xy: [0.8, 0.82]
+  - name: "Left apical"
+    side: left
+    family: lung
+    xy: [0.28, 0.12]
+  - name: "Left upper peripheral"
+    side: left
+    family: lung
+    xy: [0.22, 0.24]
+  - name: "Left upper perihilar"
+    side: left
+    family: lung
+    xy: [0.38, 0.28]
+  - name: "Left mid peripheral"
+    side: left
+    family: lung
+    xy: [0.2, 0.43]
+  - name: "Left mid perihilar"
+    side: left
+    family: lung
+    xy: [0.37, 0.44]
+  - name: "Left lower peripheral"
+    side: left
+    family: lung
+    xy: [0.22, 0.66]
+  - name: "Left lower perihilar"
+    side: left
+    family: lung
+    xy: [0.37, 0.64]
+  - name: "Left costophrenic"
+    side: left
+    family: pleura
+    xy: [0.2, 0.82]
+  - name: "Upper mediastinum"
+    side: midline
+    family: mediastinum
+    xy: [0.5, 0.18]
+  - name: "Cardiac silhouette"
+    side: midline
+    family: heart
+    xy: [0.5, 0.62]
+  - name: "Retrocardiac"
+    side: midline
+    family: heart
+    xy: [0.45, 0.65]
+  - name: "Trachea/carina"
+    side: midline
+    family: airway
+    xy: [0.5, 0.28]
+  - name: "Aortic arch"
+    side: left
+    family: mediastinum
+    xy: [0.44, 0.3]
+  - name: "Right hilum"
+    side: right
+    family: hilum
+    xy: [0.58, 0.4]
+  - name: "Left hilum"
+    side: left
+    family: hilum
+    xy: [0.42, 0.4]
+  - name: "Thoracic spine"
+    side: midline
+    family: bone
+    xy: [0.5, 0.52]

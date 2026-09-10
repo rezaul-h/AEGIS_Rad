@@ -1,0 +1,29 @@
+findings:
+  - name: Enlarged Cardiomediastinum
+    aliases: [enlarged cardiomediastinum, widened mediastinum]
+  - name: Cardiomegaly
+    aliases: [cardiomegaly, enlarged cardiac silhouette]
+  - name: Lung Opacity
+    aliases: [lung opacity, airspace opacity, pulmonary opacity]
+  - name: Lung Lesion
+    aliases: [lung lesion, pulmonary nodule, pulmonary mass]
+  - name: Edema
+    aliases: [pulmonary edema, edema]
+  - name: Consolidation
+    aliases: [consolidation, focal airspace disease]
+  - name: Pneumonia
+    aliases: [pneumonia]
+  - name: Atelectasis
+    aliases: [atelectasis, atelectatic change]
+  - name: Pneumothorax
+    aliases: [pneumothorax]
+  - name: Pleural Effusion
+    aliases: [pleural effusion, pleural fluid]
+  - name: Pleural Other
+    aliases: [pleural thickening, pleural abnormality]
+  - name: Fracture
+    aliases: [fracture, rib fracture]
+  - name: Support Devices
+    aliases: [support device, support devices, endotracheal tube, central line, enteric tube]
+  - name: No Finding
+    aliases: [no acute cardiopulmonary abnormality, no acute disease]

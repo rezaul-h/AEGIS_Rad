@@ -1,0 +1,3 @@
+base: base.yaml
+data:
+  manifest: data/mimic_manifest.csv
